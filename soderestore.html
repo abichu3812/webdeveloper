@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .m{
+     width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+        }
+        .dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background: rgb(56, 59, 209);
+}
+
+#myInput {
+  box-sizing: border-box;
+  background-image: url('searchicon.png');
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+#myInput:focus {outline: 3px solid #ddd;}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+ background-color: #4CAF50;
+  min-width: 230px;
+  overflow: auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;
+}
+        .checked {
+  color: orange;
+}
+.flex-container {
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      background-color: blanchedalmond;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+    
+    .flex-item {
+        align-items: center;
+        width: 99px;
+      height: 100px;
+      background-color: blanchedalmond;
+      margin: 10px;
+      padding-left: 13%;
+      padding-top: 9%;
+      animation: rotateAndChangeColor 5s infinite; 
+     
+    }  
+nav {
+background: rebeccapurple;
+width: 100%;
+
+display: flex;
+
+justify-content: space-between;
+
+padding: 5px;
+
+border-radius: 2px;
+
+box-shadow: 2px 2px 20px rgba(0,0,0,0.3); 
+}
+nav > a {
+color: whitesmoke;
+
+text-decoration: none;
+
+padding: 8px 16px;
+
+border-radius: 22px;
+}
+nav > a:hover {
+
+transition: 0.25s;
+
+background: rgb(56, 59, 209);
+
+color: white;
+
+}
+    .abi{
+        display: flex;
+        background-color: white;
+        padding-left: 70px;
+    }
+    .abich{
+        padding-top: 7%;
+        padding-right: 12%;
+    }
+    .s{
+        background-color:wheat;
+        font-size: 13px;
+        color: rebeccapurple;
+        border-radius: 5%;
+        height: 13%;
+       width: 120%;
+        text-align:center;
+    }
+    .sd{
+        background-color:wheat;
+        color: rebeccapurple;
+        font-size: 13px;
+        border-radius: 5%;
+        height: 13%;
+        width: 120%;
+        text-align:center;
+        margin-left: 20px;
+        padding-left: 5%;
+    }
+    .se{
+        background-color:wheat;
+        color: rebeccapurple;
+        border-radius: 5%;
+        font-size: 13px;
+        height: 13%;
+        width: 120%;
+        text-align:center;
+        margin-left: 40PX;
+        padding-left: 10%;
+    }
+    .s p{
+        padding-top: 3%;
+    }
+    .sd p{
+        padding-top: 3%;
+    }
+    .se p{
+        padding-top: 3%;
+    }
+    .sr{
+        background-color: white;
+        display: flex;
+        padding-left: 60px;
+        gap: 20px;
+
+    }
+    .st{
+        background-color: rebeccapurple;
+        padding-left: 30px;
+        margin-bottom: 40px;
+    }
+    .si{
+        display: flex;
+        padding-top: 9%;
+    }
+    .sy{
+        background-color: rebeccapurple;
+        padding-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .sk{
+        background-color: rebeccapurple;
+        padding-left: 30px;
+        margin-top: 40px;
+    }
+    
+    .abn{
+        padding-top: 60px;
+        height: 90%;
+        background-color: white;
+        width: 90%;
+    }
+       .az{
+        display: flex;
+        gap: 25px;
+        background-color:white;
+        margin-top: 50px;
+        padding-left: 45px;
+    }
+    .abbbb{
+        background-color: #4CAF50;
+        width: 87%;
+        margin-left: 30px;
+    }
+    .za{
+        background-color: rebeccapurple;
+    }
+    .rr{
+        display: flex;
+    }
+    
+    @keyframes rotateAndChangeColor {
+    
+    0%{
+        transform: rotate(0deg);
+        z-index:1;
+    }
+    50%{
+        transform: rotate(180deg);
+        z-index:9999;
+    } 
+    100%{ transform: rotate(360deg);
+        z-index:1;
+    }
+    }
+
+
+</style>
+</head>
+<body>
+    <div id="logo">
+    </div>
+    <nav>
+            <a href="form.php">Home</a>
+            <a href="dbase.php">learn</a>
+            <a href="login.html">source code</a>
+            <a href="abichuminale16@gmail.com">Contact us</a>
+            <a href="#">Services</a>
+            <a href="#">style</a>
+            <a href="abichuminale16@gmail.com">Contact us</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">
+                <div class="m"></div>
+                <div class="m"></div>
+                <div class="m"></div>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                  <a href="#about">About</a>
+                  <a href="#base">Base</a>
+                  <a href="#blog">Blog</a>
+                  <a href="#contact">Contact</a>
+                  <a href="#custom">Custom</a>
+                  <a href="#support">Support</a>
+                  <a href="#tools">Tools</a>
+                </div>
+              </div>
+              
+            <select style="padding: 5px;border-radius: 22px;background-color:bisque">
+            <option>html</option>
+            <option>css</option>
+            <option>javascript</option>
+            <option>php</option>
+            <option>database sql</option>
+        </select>
+    </nav>  
+    <div class="flex-container">
+        <div class="rr">
+            <p style="font-size: 60px;color: #4CAF50;">ሶ</p>
+            <p style="font-size: 60px;color: blue">ደ</p>
+            <p style="font-size: 60px;color: red;">RE</p>
+            <p style="font-size: 40px;color: burlywood;font-style: italic;">STORE</p>
+        </div>
+    <a href="login.html">
+    <div class="flex-item"><img src="ph.jpg" style="height: 70px;width:70px;padding-left: 7px;border-radius:50%;margin-bottom: 0px;margin-top: 0px;">
+    
+        
+       </div>
+</a>
+<a href="login.html">
+    <div class="flex-item"><img src="ph1.jpg"style="height: 70px;width:70px;padding-left 7px;border-radius:50%;margin-bottom: 0px;"></div>
+</a>
+<a href="login.html">
+    <div class="flex-item"><img src="abichu1.jpg.jpg"style="height: 70px;width:70px;border-radius:50%;margin-bottom: 0px;"></div>
+</a>
+</div>
+<div class="flex-container">
+    <div class="rr">
+        <p style="font-size: 60px;color: #4CAF50;">MO</p>
+        <p style="font-size: 60px;color: blue">VI</p>
+        <p style="font-size: 60px;color: red;">ES</p>
+        <p style="font-size: 40px;color: burlywood;font-style: italic;">STORE</p>
+    </div>
+<a href="login.html">
+    <div class="flex-item"><img src="ph3.jpg" style="height: 70px;width:70px;padding-left: 7px;border-radius:50%;margin-top: 0px;margin-bottom: 0px;">
+    </div>
+</a>
+<a href="login.html">
+    <div class="flex-item"><img src="ph.jpg"style="height: 70px;width:70px;padding-left 7px;border-radius:50%;margin-top: 0px;"></div>
+</a>
+<a href="login.html">
+    <div class="flex-item"><img src="ph4.jpg"style="height: 70px;width:70px;border-radius:50%;margin-top: 0px;"></div>
+</a>
+</div>
+  </div>
+  <div class="abn">
+  <div class="abi"> 
+<div class="abic">
+<p style="font-size: 50px;padding-left: 70px; width: 40%;color:rebeccapurple">10,000+ of users love your products</p>
+<p style="padding-left: 70px; width: 40%;">we are great product with combine nice customer service.what is statify your customer in this products. </p>
+</div>
+<div class="abich">
+    <div class="s">
+    <p> <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa- star checked"></span>
+        <span class="fa fa-star checked"></span>five star with in reviws</p>
+    </div>
+    <div class="sd">
+    <p> <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star "></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star checked"></span> five star with in report</p>
+</div>
+<div class="se">
+    <p> <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star checked"></span> five star with in best tech</p>
+</div>
+</div>
+  </div>
+  <div class="sr">
+<div class="st">
+<div class="si">
+    <div>
+    <img src="abichu1.jpg.jpg"style="height: 80px;width:80px;border-radius:50%;">
+    </div>
+    <div>
+    <p style="font-size: 18px;margin-bottom: 0px;">abichu samuial</p>
+    <p style="font-size: 16px;color: red;margin-top: 0px;">Verified Buyer</p>
+</div>
+</div>
+<p>my name is abichu.am a software eniginerring student in wollo university.am graphics disghiner,software developer,and website developer in frlance.my name is abichu.am a software eniginerring student in wollo university.am graphics disghiner,software developer,and website developer in frlance.</p>
+</div>
+<div class="sy">
+    <div class="si">
+        <div>
+        <img src="abichu1.jpg.jpg"style="height: 80px;width:80px;border-radius:50%;">
+    </div>
+    <div>
+        <p style="font-size: 18px;margin-bottom: 0px;">bereket solomon</p>
+        <p style="font-size: 18px;color: red;margin-top: 0px;">verified Buyer</p>
+        </div>
+    </div>
+    <p>my name is abichu.am a software eniginerring student in wollo university.am graphics disghiner,software developer,and website developer in frlance.my name is abichu.am a software eniginerring student in wollo university.am graphics disghiner,software developer,and website developer in frlance.</p>
+</div>
+<div class="sk">
+    <div class="si">
+        <div>
+        <img src="abichu1.jpg.jpg"style="height: 40px;width:40px;border-radius:50%;padding-top:20px">
+    </div>
+    <div class="so">
+        <p style="font-size: 18px;margin-bottom: 0px;">nahom solomon</p>
+        <p style="font-size: 18px;color: red;margin-top: 0px;">verified Buyer</p>
+        </div>
+    </div>
+    <p>my name is abichu.am a software eniginerring student in wollo university.am graphics disghiner,software developer,and website developer in frlance.my name is abichu.am a software eniginerring student in wollo university.am graphics disghiner,software developer,and website developer in frlance.</p>
+</div>
+  </div>
+  </div>
+  <div class="az">
+  <a href="login.html" style="background-color: wheat; text-decoration: none;">
+    <div><img src="ph1.jpg"style="height: 270px;width:240px;padding-left 7px;border-radius:5%;"></div>
+    <p style="font-size: 28px;padding-left: 5px;margin-bottom: 0px;color: brown;">Flowers
+    </p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <p>$9.089</p>
+    <button style="width: 50%;padding-left: 30px;margin-top: 0px;">Buy</button>
+</a>
+<a href="login.html" style="background-color: wheat; text-decoration: none;">
+    <div><img src="ph4.jpg"style="height: 270px;width:240px;padding-left 7px;border-radius:5%;"></div>
+    <p style="font-size: 28px;padding-left: 5px;margin-bottom: 0px;color: brown;">My House
+    </p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p>$53.09</p>
+    <button style="width: 50%;padding-left: 30px;margin-top: 0px;">Buy</button>
+</a>
+<a href="login.html" style="background-color: wheat;text-decoration: none;">
+    <div><img src="ph.jpg"style="height: 270px;width:240px;padding-left 7px;border-radius:5%;"></div>
+    <p style="font-size: 28px;padding-left: 5px;margin-bottom: 0px;color: brown;"> Close Style
+    </p>
+    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    <p>$99.09</p>
+    <button style="width: 50%;padding-left: 30px;margin-top: 0px;">Buy</button>
+</a>
+<a href="login.html" style="background-color: wheat; text-decoration: none;">
+    <div><img src="ph3.jpg"style="height: 270px;width:240px;padding-left 7px;border-radius:5%;"></div>
+    <p style="font-size: 28px;padding-left: 5px;margin-bottom: 0px;color: brown;">Gift
+    </p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <p>$99.89</p>
+    <button style="width: 50%;padding-left: 30px;margin-top: 0px;">Buy</button>
+</a>
+</div>
+<div class="az">
+  <a href="login.html" style="background-color: wheat; text-decoration: none;">
+    <div><img src="ph5.jpg"style="height: 270px;width:240px;padding-left 7px;border-radius:5%;"></div>
+    <p style="font-size: 28px;padding-left: 5px;margin-bottom: 0px;color: brown;">Coffe Container
+    </p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <p>$4.89</p>
+    <button style="width: 50%;padding-left: 30px;margin-top: 0px;">Buy</button>
+</a>
+<a href="login.html" style="background-color: wheat; text-decoration: none;">
+    <div><img src="ph6.jpg"style="height: 270px;width:240px;padding-left 7px;border-radius:5%;"></div>
+    <p style="font-size: 28px;padding-left: 5px;margin-bottom: 0px;color: brown;">MOBILE Phone
+    </p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p>$59.09</p>
+    <button style="width: 50%;padding-left: 30px;margin-top: 0px;">Buy</button>
+</a>
+<a href="login.html" style="background-color: wheat;text-decoration: none;">
+    <div><img src="ph7.jpg"style="height: 270px;width:240px;padding-left 7px;border-radius:5%;"></div>
+    <p style="font-size: 28px;padding-left: 5px;margin-bottom: 0px;color: brown;"> Sumsung TV
+    </p>
+    <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+    <p>$149.089</p>
+    <button style="width: 50%;padding-left: 30px;margin-top: 0px;">Buy</button>
+</a>
+<a href="login.html" style="background-color: wheat; text-decoration: none;">
+    <div><img src="ph8.jpg"style="height: 270px;width:240px;padding-left 7px;border-radius:5%;"></div>
+    <p style="font-size: 28px;padding-left: 5px;margin-bottom: 0px;color: brown;">TV
+    </p>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star "></span>
+    <span class="fa fa-star"></span>
+    <span class="fa fa-star"></span>
+    <p>$109.809</p>
+    <button style="width: 50%;padding-left: 30px;margin-top: 0px;cursor: pointer;">Buy</button>
+</a>
+</div>
+   <p style="background-color: whitesmoke; width:100%;">&copy; 2022 My Website. All rights reserved.</p>
+
+
+
+
+
+
+   <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    function filterFunction() {
+      var input, filter, ul, li, a, i;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      div = document.getElementById("myDropdown");
+      a = div.getElementsByTagName("a");
+      for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          a[i].style.display = "";
+        } else {
+          a[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+</body>
+</html>
