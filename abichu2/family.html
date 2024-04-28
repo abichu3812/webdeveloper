@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BHU Apartment Management System</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 783px;
+	height: 29px;
+	z-index: 1;
+	top: 176px;
+	left: 71px;
+}
+.main{
+	width:100%;
+	background:linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(House.jpg);
+	background-position:center;
+	background-size:cover;
+	height:109vh;
+}
+</style>
+ <script type="text/javascript">
+	function valme()
+	{
+	var name=document.getElementById("fn");
+	var error1=document.getElementById("nerr");
+	
+	var fname=document.getElementById("ff");
+	var error2=document.getElementById("ferr");
+	
+	var lname=document.getElementById("ln");
+	var error3=document.getElementById("lerr");
+
+	var phn=document.getElementById("pn");
+	var error4=document.getElementById("pp");
+	
+	var ms=document.getElementById("sex_0");
+	var fs=document.getElementById("sex_1");
+	var phone=document.getElementById("pn").value;
+	var phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+	var txt=/^[A-Za-z]+$/;
+	
+	var message="";
+	
+	if(name.value=="")
+	{
+		message="Please write your name";
+		error1.innerHTML=message;
+		name.setAttribute("style","border-color:red");
+		return false;
+	}
+	if(!(name.value.match(txt)))
+	{
+		message="name Should contain only letters";
+		error1.innerHTML=message;
+		name.setAttribute("style","border-color:red");
+		return false;
+	}
+	else 
+	{
+		name.setAttribute("style","border-color:green");
+		message="";
+		error1.innerHTML=message;
+	}
+	if(fname.value=="")
+	{
+		message="Please write father name";
+		error2.innerHTML=message;
+		fname.setAttribute("style","border-color:red");
+		return false;
+	}
+	if(lname.value=="")
+	{
+		message="Please write your last name";
+		error3.innerHTML=message;
+		lname.setAttribute("style","border-color:red");
+		return false;
+	}
+	if(!(phn.value.match(phoneno)))
+	{
+		message="Please write Phone number";
+		error4.innerHTML=message;
+		name.setAttribute("style","border-color:red");
+		return false;
+	}
+	if(phn.value.indexOf("09")!=0)
+	{
+		message="Phone number must start from 09";
+		error4.innerHTML=message;
+		name.setAttribute("style","border-color:red");
+		return false;
+	}
+	}
+	</script>
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#apDiv2 {
+	position: absolute;
+	width: 242px;
+	height: 32px;
+	z-index: 2;
+	left: 1073px;
+	top: 139px;
+}
+body {
+	background-color: #FFF;
+}
+#apDiv3 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 3;
+}
+#apDiv4 {
+	position: absolute;
+	width: 200px;
+	height: 115px;
+	z-index: 4;
+	left: 5px;
+	top: 1039px;
+	background-color: #FFFFFF;
+}
+#apDiv5 {
+	position: absolute;
+	width: 779px;
+	height: 115px;
+	z-index: 5;
+	left: 529px;
+	top: 285px;
+}
+#apDiv6 {
+	position: absolute;
+	width: 647px;
+	height: 115px;
+	z-index: 6;
+	left: 706px;
+	top: 285px;
+}
+#apDiv7 {
+	position: absolute;
+	width: 71px;
+	height: 23px;
+	z-index: 6;
+	left: 799px;
+	top: 467px;
+	background-color: #0066FF;
+}
+</style>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+</head>
+
+<body>
+      <div id="apDiv1">
+        <ul id="MenuBar1" class="MenuBarHorizontal">
+         <li><a href="home.html">HOME</a></li>
+          <li><a class="MenuBarItemSubmenu" href="#">ABOUT</a>
+            <ul>
+              <li><a href="http://www.bhu.edu.et">Bule Hora University</a></li>
+              <li><a href="Apartama.html">Apartment Service</a></li>
+              <li><a href="mode.html">Service Mode</a></li>
+            </ul>
+          </li>
+          <li><a class="MenuBarItemSubmenu" href="#">USERS</a>
+            <ul>
+              <li><a class="MenuBarItemSubmenu" href="#">Gallery</a>
+                <ul>
+                  <li><a href="photo.html">Photos</a></li>
+                  <li><a href="https://www.youtube.com/channel/UCOwKefYkEcmCvFmfThy9KrQ">Videos</a></li>
+                </ul>
+              </li>
+              <li><a href="http://www.bhu.edu.et">Web Mail</a></li>
+              <li><a href="interest.html">Interests</a></li>
+            </ul>
+          </li>
+          <li><a class="MenuBarItemSubmenu" href="#">DONATE</a>
+          	<ul>
+         	 <li><a href="#">Sponsorship</a></li>
+         	</ul>
+          </li>
+          <li><a class="MenuBarItemSubmenu" href="#">SERVICES</a>
+            <ul>
+              <li><a class="MenuBarItemSubmenu" href="#">Apartama</a>
+                <ul>
+                  <li><a href="add.php">Add New</a></li>
+                  <li><a href="#">Formers</a></li>
+                </ul>
+              </li>
+              </li>
+               <li><a href="#">Bill</a>
+                <ul>
+                  <li><a href="#">Water</a></li>
+                   <li><a href="#">Electric</a></li>
+                  <li><a href="#">Phone</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Report</a></li>
+            </ul>
+          </li>
+            </ul>
+          </li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+<table width="1349">
+  <tr>
+    <td><img src="photo.jpg" width="1343" height="164" /></td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<form id="form1" name="form1" method="post" action=""><u><b style="color: #0F0">
+  <h1 style="text-align:center">	Fill The Family Members Information</h1></b></u></p>
+  <div id="apDiv5">
+    <p style="font-size:16px">
+      <label for="textfield3">First name</label>
+      <input name="fn" type="text" id="fn" placeholder="First Name Here!" size="40" />
+    </p>
+    <p style="font-size:16px"> <span id="ferr" style="color:red"> </span> <span id="nerr" style="color:red"> </span>
+      <label for="textfield4">Last name</label>
+      <input name="ln" type="text" id="ln" placeholder="Last Name Here!" size="40" />
+      <span id="lerr" style="color:red"> </span></p>
+    <p>
+      <label for="textfield5">Age</label>
+      <input name="textfield3" type="text" id="textfield5" size="10" placeholder="Age Here!" />
+      <label> <br />
+        <br />
+        Gender <br />
+        <input type="radio" name="sex" value="m" id="sex_0" />
+        Male</label>
+      <label>
+        <input type="radio" name="sex" value="f" id="sex_1" />
+        Female</label>
+    </p>
+  </div>
+  <p align="center">&nbsp;</p>
+  <div id="apDiv2"><a href="#" style=" text-align:up">
+    <input class="srch" type="search" name="input" placeholder="your search text here!"/>
+    </a> <a href="#" style=" text-align:up">
+      <button class="btn">Search</button>
+    </a></div>
+  <p align="center" style="font-size:16px">&nbsp;</p>
+  <p align="center">&nbsp;</p>
+  <p align="center" style="color:#00F"><label> <b> <br />
+    <br />
+    <br />
+    <br />
+  </b></label>
+    <input type="submit" name="button" id="button" value="ADD NEW" onclick="return valme();" />
+    <input type="reset" name="button2" id="button2" value="Clear" />
+  </p>
+  <div id="apDiv7" style="text-align:center"><a href="add.html"><font style="font-size:18px" color="#FFFFFF">NEXT</font></a></div>
+</form>
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+    </script>
+</body>
+</html>
