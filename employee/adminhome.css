@@ -1,0 +1,52 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color:  blue;
+
+}
+ul
+{
+    margin:0px;
+    padding: 0px;
+    list-style: none;
+	top:15%;
+	left:38%;position:absolute;
+
+}
+
+ ul li{
+	 padding:1em;
+    float:center;
+    width:320px;
+    height:55px;
+    background-color: rgb(199, 43, 43);
+	opacity: .9;
+    line-height: 55px;
+    text-align: center;
+    font-size: 25px;
+
+
+}
+
+ ul li a{
+    text-decoration:none;
+    color: white;
+    display:block;
+
+}
+
+ ul li a:hover{
+    background-color:darkorange;
+
+
+}
+
+ul li ul li {
+    display:none;
+}
+
+
+ul li:hover ul li{
+    display: block;
+}
